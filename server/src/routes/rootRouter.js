@@ -9,7 +9,8 @@ const rootRouter = new express.Router();
 rootRouter.use("/", clientRouter);
 
 rootRouter.use("/users", async (req, res) => {
-    const users = await User.query()
+    // const users = await User.query()
+    const users = [{email: "yo@yo.com"}]
     res.render("index", { users })
 })
 
