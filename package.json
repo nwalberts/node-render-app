@@ -1,5 +1,6 @@
 {
   "type": "module",
+  "name": "nicks-node-app",
   "private": true,
   "workspaces": [
     "server",
