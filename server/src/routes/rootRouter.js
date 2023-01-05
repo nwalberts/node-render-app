@@ -2,15 +2,15 @@ import express from "express";
 import User from "../models/User.js";
 import userSessionsRouter from "./api/v1/userSessionsRouter.js";
 import usersRouter from "./api/v1/usersRouter.js";
-import clientRouter from "./clientRouter.js";
+// import clientRouter from "./clientRouter.js";
 const rootRouter = new express.Router();
 
 
-rootRouter.use("/", clientRouter);
+// rootRouter.use("/", clientRouter);
 
-rootRouter.use("/users", async (req, res) => {
-    // const users = await User.query()
-    const users = [{email: "yo@yo.com"}]
+rootRouter.use("/", async (req, res) => {
+    const users = await User.query()
+    // const users = [{email: "yo@yo.com"}]
     res.render("index", { users })
 })
 
