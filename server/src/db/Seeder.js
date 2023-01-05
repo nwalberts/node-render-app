@@ -7,7 +7,7 @@ import { connection } from "../boot.js"
 class Seeder {
     static async seed() {
         // include individual seed commands here
-        await User.query().insert({email: "jo@yo.com", password: "12345" })
+        await User.query().insert({email: "jo@hello.com", password: "12345" })
 
 
         console.log("Done!")
