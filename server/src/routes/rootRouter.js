@@ -9,7 +9,13 @@ const rootRouter = new express.Router();
 // rootRouter.use("/", clientRouter);
 
 rootRouter.use("/", async (req, res) => {
-    const users = await User.query()
+    let users = null
+    try {
+        users = await User.query()
+    } catch(error){
+        console.log("DB QUERY ERROR from ya boi")
+        console.log(error)
+    }
     // const users = [{email: "yo@yo.com"}]
     res.render("index", { users })
 })
