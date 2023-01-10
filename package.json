@@ -15,7 +15,9 @@
     "start": "yarn workspace authentication-with-passport-overview-server start",
     "dev:cypress": "yarn workspace authentication-with-passport-overview-server dev:e2e",
     "e2e:open": "yarn workspace authentication-with-passport-overview-e2e e2e:open",
-    "e2e:run": "yarn workspace authentication-with-passport-overview-e2e e2e:run"
+    "e2e:run": "yarn workspace authentication-with-passport-overview-e2e e2e:run",
+    "db:seed": "yarn workspace authentication-with-passport-overview-server db:seed",
+    "migrate:latest": "yarn workspace authentication-with-passport-overview-server migrate:latest"
   },
   "engines": {
     "node": "^14.15",
