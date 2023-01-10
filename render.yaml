@@ -8,7 +8,7 @@ services:
     name: breakable-toy
     env: node
     plan: free
-    buildCommand: "./bin/render-build.sh"
+    buildCommand: "./server/bin/render-build.sh"
     startCommand: "yarn start"
     envVars:
       - key: DATABASE_URL
