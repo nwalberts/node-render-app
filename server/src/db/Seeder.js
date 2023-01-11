@@ -1,5 +1,5 @@
 // server/src/db/Seeder.js
-import { User } from "./../models/User.js"
+import User from "./../models/User.js"
 
 /* eslint-disable no-console */
 import { connection } from "../boot.js"
